@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>student-registration-form</title>
+  </head>
+  <body>
+    <h1>Student Registration System</h1>
+    <main>
+      <section id="form_section">
+        <form>
+          <label for="name"
+            >Name:-
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
+              placeholder="Name"
+            />
+          </label>
+          <label for="email"
+            >Email:-
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              placeholder="Email"
+            />
+          </label>
+          <label for="id"
+            >ID:-
+            <input
+              type="number"
+              name="id"
+              id="id"
+              autocomplete="off"
+              placeholder="Student ID"
+            />
+          </label>
+          <label for="contact"
+            >Contact No.
+            <input
+              type="number"
+              name="contact"
+              autocomplete="off"
+              id="contact"
+              placeholder="Contact NO."
+              minlength="10"
+            />
+          </label>
+          <button type="submit" id="btn">Add</button>
+        </form>
+      </section>
+
+      <section id="output">
+        <h3>Student Details</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Student Name</th>
+              <th>Student Email</th>
+              <th>Student Contact NO.</th>
+              <th>Operation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- add new row  -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>

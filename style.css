@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body h1 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 2.5rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+#form_section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main form {
+  max-width: 600px;
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+form label input {
+  border: 2px solid white;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+}
+
+form button {
+  padding: 10px 12px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+}
+
+main #output {
+  flex: 1;
+  padding: 30px 10px;
+}
+
+#output h3 {
+  text-align: center;
+}
+
+#output table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0.5rem;
+}
+
+#output table th {
+  border: 1px solid slategray;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+#output table td {
+  text-align: center;
+}
+
+.edit {
+  cursor: pointer;
+}
+
+.remove {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
